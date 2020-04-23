@@ -3,17 +3,17 @@
  * 
  * @file    kdb_cpp.h
  * @author  Joaquin Bejar <jb"AT"taunais.com>
- * @date    2018-06-27
+ * @date    2020-04-23
  */
 
 #ifndef __KDB_CPP_H__
 #define __KDB_CPP_H__
 
-#include "internal/kdb_type.h"
-#include "internal/kdb_connector.h"
-#include "internal/kdb_result.h"
-#include "internal/kdb_vector.h"
-#include "internal/kdb_table.h"
+#include "kdb_type.h"
+#include "kdb_connector.h"
+#include "kdb_result.h"
+#include "kdb_vector.h"
+#include "kdb_table.h"
 
 
 #endif

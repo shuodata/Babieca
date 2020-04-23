@@ -36,6 +36,8 @@ private:
 
 
 namespace Color {
+
+
     enum Code {
         FG_RED = 31,
         FG_GREEN = 32,
@@ -59,6 +61,11 @@ namespace Color {
         friend std::ostream &operator<<(std::ostream &os, const Modifier &mod);
 
     };
+    static Color::Modifier red(Color::FG_RED, Color::LIGHT);
+    static Color::Modifier white(Color::FG_WHITE, Color::LIGHT);
+    static Color::Modifier green(Color::FG_GREEN, Color::LIGHT);
+    static Color::Modifier yellow(Color::FG_YELLOW, Color::LIGHT);
+    static Color::Modifier def(Color::FG_DEFAULT, Color::LIGHT);
 }
 
 #endif //BABIECA_COMMON_H

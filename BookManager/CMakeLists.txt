@@ -26,5 +26,5 @@ endif()
 # BookManager executable
 add_executable(BookManager ${BOOK_SOURCE_FILES})
 link_directories(usr/local/lib)
-target_link_libraries(BookManager  ${RPCLIB_LIBS} Common Book kdb rpclib Threads::Threads)
+target_link_libraries(BookManager  ${RPCLIB_LIBS} Common Book kdb KDB rpclib Threads::Threads)
 

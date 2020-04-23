@@ -3,17 +3,17 @@
  * 
  * @file    kdb_table.h
  * @author  Joaquin Bejar <jb"AT"taunais.com>
- * @date    2018-06-27
+ * @date    2020-04-23
  */
 
 #ifndef __KDB_TABLE_H__
 #define __KDB_TABLE_H__
 
 #ifndef KXVER
-#define KXVER 3
+#define KXVER 4
 #endif
 
-#include "../external/k.h"
+#include "k.h"
 #include "kdb_type.h"
 #include "kdb_result.h"
 #include "kdb_vector.h"

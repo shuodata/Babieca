@@ -3,18 +3,18 @@
  * 
  * @file    kdb_vector.h
  * @author  Joaquin Bejar <jb"AT"taunais.com>
- * @date    2018-06-27
+ * @date    2020-04-23
  */
 
 #ifndef __KDB_VECTOR_H__
 #define __KDB_VECTOR_H__
 
 #ifndef KXVER
-#define KXVER 3
+#define KXVER 4
 #endif
 
 #include <iterator>
-#include "../external/k.h"
+#include "k.h"
 #include "kdb_type.h"
 
 namespace kdb {

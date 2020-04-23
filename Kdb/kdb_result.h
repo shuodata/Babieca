@@ -3,7 +3,7 @@
  * 
  * @file    kdb_result.h
  * @author  Joaquin Bejar <jb"AT"taunais.com>
- * @date    2018-06-27
+ * @date    2020-04-23
  */
 
 #ifndef __KDB_RESULT_H__
