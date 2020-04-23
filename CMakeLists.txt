@@ -3,7 +3,8 @@ project(Babieca)
 set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(Common)
-add_subdirectory(Book)
+add_subdirectory(OrderManagement)
+add_subdirectory(BookManager)
 
 
 
