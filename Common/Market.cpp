@@ -4,5 +4,6 @@
 
 #include "Market.h"
 #include <iostream>
+#include <utility>
 
-Market::Market(std::string i) : id(i){}
+Market::Market(std::string i) : id(std::move(i)){}

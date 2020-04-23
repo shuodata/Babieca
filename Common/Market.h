@@ -12,6 +12,7 @@ struct Market {
     std::string id;
     //Book book = Book()
     Market(std::string i);
+
 };
 
 

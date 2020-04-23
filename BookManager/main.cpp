@@ -6,6 +6,8 @@
 #include <Common.h>
 #include <Book.h>
 #include "rpc/server.h"
+#define KXVER 4
+#include <k.h>
 
 void foo() {
     std::cout << "foo was called!" << std::endl;
@@ -19,6 +21,8 @@ int main() {
     static Color::Modifier green(Color::FG_GREEN, Color::LIGHT);
     static Color::Modifier yellow(Color::FG_YELLOW, Color::LIGHT);
     static Color::Modifier def(Color::FG_DEFAULT, Color::LIGHT);
+    int c=khp("localhost",5000);
+    std::cout << green << c << k(c,"2+2",(K)0) << def;
 
     Book book = Book(1,"CL");
     //t = book.InsertOrder(order1);

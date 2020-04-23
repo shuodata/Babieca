@@ -30,7 +30,7 @@ public:
     std::vector<std::string> Serialize();
     void Deserialize(const std::vector<std::string>& vs);
     void Print();
-    bool InsertOrder(Order order);
+    bool InsertOrder(const Order& order);
     bool RemoveOrder(Order order);
     bool WipeMarket(Market market);
     bool CloseMarket(Market market);

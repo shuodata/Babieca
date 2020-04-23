@@ -35,8 +35,6 @@ private:
 };
 
 
-
-
 namespace Color {
     enum Code {
         FG_RED = 31,

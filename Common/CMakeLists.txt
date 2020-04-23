@@ -4,6 +4,7 @@ target_include_directories(Common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 set(BOOK_SOURCE_FILES Book.h Book.cpp)
 add_library(Book SHARED ${BOOK_SOURCE_FILES})
+target_link_libraries(Book Common)
 target_include_directories(Book PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 set(EXCHANGE_SOURCE_FILES Exchange.h Exchange.cpp)

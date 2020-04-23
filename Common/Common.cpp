@@ -41,10 +41,10 @@ void Order::Deserialize(std::string s){
 }
 
 void Order::PrintOrder() const{
-    Color::Modifier red(Color::FG_RED, Color::LIGHT);
-    Color::Modifier yellow(Color::FG_YELLOW, Color::LIGHT);
-    Color::Modifier def(Color::FG_DEFAULT, Color::LIGHT);
-    Color::Modifier cyan(Color::FG_CYAN, Color::LIGHT);
+    static Color::Modifier red(Color::FG_RED, Color::LIGHT);
+    static Color::Modifier yellow(Color::FG_YELLOW, Color::LIGHT);
+    static Color::Modifier def(Color::FG_DEFAULT, Color::LIGHT);
+    static Color::Modifier cyan(Color::FG_CYAN, Color::LIGHT);
 
     std::cout << cyan << "{";
     std::cout << yellow << " id: " << red << id << "," ;
@@ -79,13 +79,9 @@ std::string Order::__id_generator() {
 }
 
 
-
-
-
 namespace Color {
 
         Modifier::Modifier(Code pCode, Bright pBright) : code(pCode), bright(pBright) {}
-
         std::ostream &operator<<(std::ostream &os, const Modifier &mod) {
             return os << "\033[" << mod.bright << ";" << mod.code << "m";
         };
